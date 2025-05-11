@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(199deg, #0077b6, #00b4d8); /* Cool blues */
+}
+
+.add-coffee-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Light, frosty white */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 2rem;
+}
+
+.styled-input {
+  padding: 12px;
+  border: 3px solid #00b4d8; /* Lighter blue border */
+  border-radius: 8px;
+  background-color: #e0f7fa; /* Soft cyan background */
+  color: #0077b6; /* Deep blue text */
+  font-size: 18px;
+  width: 90%;
+  transition: border 0.3s ease;
+}
+
+.styled-input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 8px rgba(0, 119, 182, 0.6); /* Focus effect */
+}
+
+button {
+  background-color: #00b4d8; /* Lighter blue button */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0077b6; /* Darker blue on hover */
+  transform: translateY(-3px); /* Button lift effect */
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.coffee-card {
+  background-color: #f0f8ff; /* Light cyan background for cards */
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.coffee-card:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
