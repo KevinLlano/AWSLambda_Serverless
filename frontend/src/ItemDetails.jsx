@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getCoffee, updateCoffee, deleteCoffee } from "./utils/apis";
-import reactImg from "./assets/react.svg";
+import { VscCoffee } from "react-icons/vsc";
 
 
 const ItemDetails = () => {
@@ -42,7 +42,7 @@ const ItemDetails = () => {
                 </>
             ) : (
                 <>
-                    <img src={reactImg} alt="coffee" />
+                    <VscCoffee size={50} />
                     <p>Price: ${coffee.price}</p>
                     <p>{coffee.available ? "Available" : "Not Available"}</p>
                 </>
