@@ -186,7 +186,11 @@ This guide outlines the steps to create a Coffee Shop API using AWS services, La
 
 * **Lambda Function Naming and Configuration**: Ensuring consistency in naming conventions across Lambda functions, CloudWatch, and zip files was critical. Any mismatch resulted in errors, which were time-consuming to resolve, but CloudWatch logs facilitated troubleshooting.
 
-* **Git Tracking Issues**: Git initially failed to track all my folders, especially the LambdaWithLayer and frontend directories, leading to missing files during commits. This required manually checking and adjusting the repository structure to ensure all folders and files were properly added and tracked before pushing.
+* **Git Tracking Issues**: Git initially failed to track all my folders, especially the LambdaWithLayer and frontend directories, leading to missing files during commits. This required manually checking and adjusting the repository structure to ensure all folders and files were properly added and tracked before pushing. had to use commands like this. git rm --cached -r LambdaWithLayer frontend
+git add LambdaWithLayer frontend
+git commit -m "Fix submodule issue and re-add folders"
+git push origin main --force
+
 
 
 
