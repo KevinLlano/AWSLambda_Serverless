@@ -186,12 +186,23 @@ This guide outlines the steps to create a Coffee Shop API using AWS services, La
 
 * **Lambda Function Naming and Configuration**: Ensuring consistency in naming conventions across Lambda functions, CloudWatch, and zip files was critical. Any mismatch resulted in errors, which were time-consuming to resolve, but CloudWatch logs facilitated troubleshooting.
 
-* **Git Tracking Issues**: Git initially failed to track all my folders, especially the LambdaWithLayer and frontend directories, leading to missing files during commits. This required manually checking and adjusting the repository structure to ensure all folders and files were properly added and tracked before pushing. had to use commands like this. git rm --cached -r LambdaWithLayer frontend
-git add LambdaWithLayer frontend
-git commit -m "Fix submodule issue and re-add folders"
-git push origin main --force
+* **Git Tracking Issues:** Git initially failed to track all my folders, especially the `LambdaWithLayer` and `frontend` directories, which led to missing files during commits. I had to manually check and adjust the repository structure to ensure all folders and files were properly added and tracked before pushing. This involved using commands like:
 
+```bash
+git rm --cached -r LambdaWithLayer frontend  
+git add LambdaWithLayer frontend  
+git commit -m "Fix submodule issue and re-add folders"  
+git push origin main --force  
+```
 
-
-
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+![DynamoDB table](image-11.png)
 ![alt text](image-1.png)
+![alt text](image.png)
